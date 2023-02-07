@@ -13,3 +13,4 @@ if (typeof userInput === "string") {
 } else {
   generateError("Invalid input type!");
 }
+

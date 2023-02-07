@@ -5,9 +5,9 @@ var Job;
     Job[Job["EMPLOYE"] = 1] = "EMPLOYE";
     Job[Job["TEACHER"] = 2] = "TEACHER";
     Job[Job["ANY"] = 3] = "ANY";
-})(Job || (Job = {})); // this is enum
+})(Job || (Job = {}));
 const user = {
-    // const user = {
+    id: "1293912312",
     name: "Handy Reza Alfanda",
     age: 22,
     hobby: ["gaming", "coding"],

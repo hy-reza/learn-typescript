@@ -6,6 +6,7 @@ enum Job {
 } // this is enum
 
 const user: {
+  readonly id: string;
   name: string;
   age: number;
   hobby: string[];
@@ -13,6 +14,7 @@ const user: {
   job: Job;
 } = {
   // const user = {
+  id: "1293912312",
   name: "Handy Reza Alfanda", //string
   age: 22, //umber
   hobby: ["gaming", "coding"], //array
