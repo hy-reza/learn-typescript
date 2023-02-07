@@ -1,6 +1,8 @@
-var userInput; //unknown type is more strick than any
-var userName;
+"use strict";
+let userInput; //unknown type is more strick than any
+let userName;
 function generateError(message) {
+    //type mewakili kondisi yang tidak mungkin terjadi,
     throw new Error(message);
 }
 userInput = "name";
