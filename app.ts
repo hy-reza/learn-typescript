@@ -1,16 +1,15 @@
-//basic ts
-function sum(n1: number, n2: number, print: boolean, pharse: string): number {
-  const result = n1 + n2;
-  if (print) {
-    console.log(pharse + result);
-  }
-  return result;
+let userInput: unknown; //unknown type is more strick than any
+let userName: string;
+
+function generateError(message: string): never {
+  //type mewakili kondisi yang tidak mungkin terjadi,
+  throw new Error(message);
 }
+userInput = "name";
 
-//variabel tidak perlu diberi keterangan type kecuali tidak di assign value-nya
-const number1 = 1;
-const number2 = 2;
-const isPrint = true;
-const resultPharse = "The result is : ";
-
-sum(number1, number2, isPrint, resultPharse);
+if (typeof userInput === "string") {
+  //have to check the type first
+  userName = userInput;
+} else {
+  generateError("Invalid input type!");
+}

@@ -1,13 +1,13 @@
-//basic ts
-function sum(n1, n2, print, pharse) {
-    var result = n1 + n2;
-    if (print) {
-        console.log(pharse + result);
-    }
-    return result;
+var userInput; //unknown type is more strick than any
+var userName;
+function generateError(message) {
+    throw new Error(message);
 }
-var number1 = 1;
-var number2 = 2;
-var isPrint = true;
-var resultPharse = "The result is : ";
-sum(number1, number2, isPrint, resultPharse);
+userInput = "name";
+if (typeof userInput === "string") {
+    //have to check the type first
+    userName = userInput;
+}
+else {
+    generateError("Invalid input type!");
+}
